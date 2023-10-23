@@ -10,9 +10,6 @@ def main():
     password = input("Enter a password to be encoded: ")
     print(f"Encoded passwaord: {encoder(password)}")
 
-if __name__ == '__main__':
-    main()
-
 def decode(str_num):
     decoded = ""
     for i in str_num:
@@ -21,3 +18,6 @@ def decode(str_num):
         else:
             decoded += str(int(i) + 7)
     return decoded
+
+if __name__ == '__main__':
+    main()
