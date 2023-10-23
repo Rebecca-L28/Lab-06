@@ -8,3 +8,12 @@ def encoder():
     print(f"Encoded password: {encoded_password}")
 
     encoder()
+
+def decode(str_num):
+    decoded = ""
+    for i in str_num:
+        if int(i) > 2:
+            decoded += str(int(i) - 3)
+        else:
+            decoded += str(int(i) + 7)
+    return decoded
