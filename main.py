@@ -9,6 +9,8 @@ def encoder(password):
 def main():
     password = input("Enter a password to be encoded: ")
     print(f"Encoded passwaord: {encoder(password)}")
+    encoded_password = input("Enter a password to be decoded: ")
+    print(f"Decoded password: {decode(encoded_password)}")
 
 def decode(str_num):
     decoded = ""
